@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4주차 과제</title>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{background-image: url("la2.jpg");background-repeat:no-repeat;background-size: contain;}
+			#la{width: 300px;display: block; margin: auto;}
+		#t{display: block;position: absolute;top: 180px; left: 630px; font-size: 5em;font-weight: bold; color: white;}	
+		#tt{display: block;position: absolute;top: 120px; left: 330px;}
+		h2{font-family: 'Playfair Display', serif;color: white; text-align: center;padding-top: 10px;}
+		.manual{margin-top: 50px; margin-left: 60px;}
+		.manualin{width: 25%;height: 550px; float: left;}
+		.man1{width: 300px;height: 500px;background-image: url("fm.jpg");background-size: cover;
+				background-position: center;}
+		.man2{width: 300px;height: 500px;background-image: url("bm.jpg");background-size: cover;}
+		.man3{width: 300px;height: 500px;background-image: url("jd.jpg");background-size: cover;}
+		.man4{width: 300px;height: 500px;background-image: url("rt.jpg");background-size: cover;background-position: center;}
+	</style>
+</head>
+<body>
+	<h1 id="tt">JULY 13TH 1985&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEMBLEY STADIUM</h1>
+	<h1 id="t">QUEEN</h1>
+	<img src="la.png" id="la">
+	<div class="manual">
+		<div class="manualin">
+			<div class="man1" id="fm"><h2>Freddie Mercury</h2></div>
+		</div>
+		<div class="manualin">
+			<div class="man2" id="bm"><h2>Brian May</h2></div>
+		</div>
+		<div class="manualin">
+			<div class="man3" id="jd"><h2>John Deacon</h2></div>
+		</div>
+		<div class="manualin">
+			<div class="man4" id="rt"><h2>Roger Taylor</h2></div>
+		</div>
+	</div>
+	<audio src="eo.mp3" id="eo" loop></audio>
+	<audio src="br.mp3" id="br" loop></audio>
+	<audio src="aobd.mp3" id="aobd" loop></audio>
+	<audio src="wwry.mp3" id="wwry" loop></audio>
+	<script type="text/javascript">
+		var fmstate = "off";
+		eo.volume = 0.5;
+		fm.onclick = function(){
+			if(fmstate == "off"){
+				eo.play(); fmstate="on";
+			    fm.style.opacity = "1";}
+			else{ 
+				eo.pause(); fmstate="off";
+				fm.style.opacity = "0.5";
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		var bmstate = "off";
+		br.volume = 1;
+		bm.onclick = function(){
+			if(bmstate == "off"){
+				br.play(); bmstate="on";
+			    bm.style.opacity = "1";}
+			else{ 
+				br.pause(); bmstate="off";
+				bm.style.opacity = "0.5";
+			}
+		}
+		</script>
+	<script type="text/javascript">
+		var jdstate = "off";
+		aobd.volume = 1;
+		jd.onclick = function(){
+			if(jdstate == "off"){
+				aobd.play(); jdstate="on";
+			    jd.style.opacity = "1";}
+			else{ 
+				aobd.pause(); jdstate="off";
+				jd.style.opacity = "0.5";
+			}
+		}
+	</script>
+	</script>
+	<script type="text/javascript">
+		var rtstate = "off";
+		wwry.volume = 1;
+		rt.onclick = function(){
+			if(rtstate == "off"){
+				wwry.play(); rtstate="on";
+			    rt.style.opacity = "1";}
+			else{ 
+				wwry.pause(); rtstate="off";
+				rt.style.opacity = "0.5";
+			}
+		}
+	</script>
+</body>
+</html>
+		
